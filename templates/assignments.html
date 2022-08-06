@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Assignments
+{% endblock %}
+
+{% block nav %}
+    <li class="nav-item"><a class="nav-link" href="/videos">Videos</a></li>
+    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Assignments</a></li>
+{% endblock %}
+
+{% block main %}
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a class="link-primary" href="/get-pdf/{{ file_name }}" style="text-decoration: none;">
+                Open {{ file_name }}
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a class="link-primary" href="{{ sub_form }}" style="text-decoration: none;">
+                Submission form
+            </a>
+        </li>
+    </ul>
+       
+{% endblock %}

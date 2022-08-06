@@ -1,0 +1,87 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main
+{
+    position: relative;
+    margin-top: 30px;
+}
+
+.main-cont 
+{
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+ 
+
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar-wrapper
+{
+    margin-left: 0;
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.content-wrapper
+{
+    margin-left: 0;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.form-wrapper
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 300px;
+    margin: 30px auto;
+}
+
+.carousel-wrapper
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 10px auto;
+}
+
+.yt-video
+{
+    margin: 0;
+    width: 420px;
+    height: 100%;
+}
+
+.carousel-caption
+{
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    background: rgb(141, 141, 141);
+}

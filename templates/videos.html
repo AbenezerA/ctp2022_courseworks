@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Videos
+{% endblock %}
+
+{% block nav %}
+    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/videos">Videos</a></li>
+    <li class="nav-item"><a class="nav-link" href="/assignments">Assignments</a></li>
+{% endblock %}
+
+{% block main %}
+
+    {% if embed_url and embed_url != "url" %}
+        <div class="ratio ratio-16x9">
+            {{ embed_url }}
+        </div>
+        {% if extra %}
+            <div class="ratio ratio-16x9">
+                {{ extra }}
+            </div>
+        {% endif %}
+    {% else %}
+        <p class="lead">
+            No video for this subject this week :( <br>
+            Check back soon for updates.
+        </p>
+    {% endif %}
+
+{% endblock %}

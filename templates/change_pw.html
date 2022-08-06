@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Pass
+{% endblock %}
+
+{% block main %}
+
+        <div class="container-fluid form-wrapper w-40">
+            <form action="/change_pw" method="post">
+                <div class="form-floating mb-3">
+                    <input autocomplete="off" autofocus class="form-control" id="floatingInput" name="oldpass" placeholder="Old Password" type="password">
+                    <label for="floatingInput">Old Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="floatingInput" name="newpass" placeholder="New Password" type="password">
+                    <label for="floatingInput">New Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="floatingInput" name="newpass_confirm" placeholder="Confirm New Password" type="password">
+                    <label for="floatingInput">Confirm New Password</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Change Password</button>
+            </form>
+        </div>
+
+{% endblock %}

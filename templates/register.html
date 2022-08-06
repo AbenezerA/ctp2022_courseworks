@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+    <div class="form-wrapper">
+        <form action="/register" method="post">
+            <div class="form-floating mb-3">
+                <input autocomplete="off" autofocus type="text" class="form-control" id="floatingInput" name="username" placeholder="Username">
+                <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input autocomplete="off" type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" name="confirm_pw" placeholder="Confirm password">
+                <label for="floatingPassword">Confirm password</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" name="section" aria-label="Section">
+                  <option value="beginner" selected>Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                </select>
+                <label for="floatingSelect">Section</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+{% endblock %}

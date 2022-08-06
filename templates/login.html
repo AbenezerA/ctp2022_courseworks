@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %} 
+    Log In
+{% endblock %} 
+
+{% block main %}
+
+    <div class="form-wrapper">
+        <form action="/login" method="post">
+            <div class="form-floating mb-3">
+                <input autocomplete="off" autofocus class="form-control" id="floatingInput" name="username" placeholder="Username" type="text">
+                <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="floatingInput" name="password" placeholder="Password" type="password">
+                <label for="floatingInput">Password</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
+    </div>
+
+{% endblock %}
