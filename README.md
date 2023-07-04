@@ -1,5 +1,5 @@
 # CTP Summer 2022 Student Courserworks Website
-### Video Demo:  <URL HERE>
+### Video Demo:  https://youtu.be/0o8IxUn11Z0
 ### Description: A mock website that lets students enrolled in the CTP mentorship program create accounts where they'll find uploaded instruction videos and assigned homework, in addition to resources and announcements.
 
 ## CTP Ethiopia
